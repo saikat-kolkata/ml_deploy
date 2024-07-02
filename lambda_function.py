@@ -5,7 +5,7 @@ import ast
 def lambda_handler(event, context):
     # TODO implement
     runtime_client = boto3.client('runtime.sagemaker')
-    endpoint_name = 'xgboost-2024-07-01-15-15-04-363'
+    endpoint_name = 'xgboost-2024-07-01-15-15-04-XXX'
     
     # sample = '5.1,3.5,1.4,0.2'
     sample = '{},{},{},{}'.format(ast.literal_eval(event['body'])['x1'],
